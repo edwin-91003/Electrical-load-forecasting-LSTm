@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOAD FORECASTING</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>LOAD FORECASTING</h1>
+    </header>
+    <main>
+        <form id="forecast-form">
+            <h2>INPUT</h2>
+            <div class="input-group">
+                <label for="T-1">T-1:</label>
+                <input type="number" id="T-1" name="T-1" step="any" required>
+            </div>
+ <div class="input-group">
+                <label for="T-2">T-2:</label>
+                <input type="number" id="T-2" name="T-2" step="any" required>
+            </div>
+ <div class="input-group">
+                <label for="T-3">T-3:</label>
+                <input type="number" id="T-3" name="T-3" step="any" required>
+            </div>
+ <div class="input-group">
+                <label for="T-4">T-4:</label>
+                <input type="number" id="T-4" name="T-4" step="any" required>
+            </div>
+ <div class="input-group">
+                <label for="T-24">T-24:</label>
+                <input type="number" id="T-24" name="T-24" step="any" required>
+            </div>
+
+ <div class="input-group">
+                <label for="T-48">T-48:</label>
+                <input type="number" id="T-48" name="T-48" step="any" required>
+            </div>
+ <div class="input-group">
+                <label for="T-72">T-72:</label>
+                <input type="number" id="T-72" name="T-72" step="any" required>
+            </div>
+ <div class="input-group">
+                <label for="T-96">T-96:</label>
+                <input type="number" id="T-96" name="T-96" step="any" required>
+            </div>
+ <div class="input-group">
+                <label for="DAY">DAY:</label>
+                <input type="number" id="DAY " name="DAY" step="any" required>
+            </div>
+ <div class="input-group">
+                <label for="SEASON">SEASON:</label>
+                <input type="number" id="SEASON" name="SEASON" step="any" required>
+            </div>
+ <div class="input-group">
+                <label for="TEMP">TEMP:</label>
+                <input type="number" id="TEMP" name="TEMP" step="any" required>
+            </div>
+<div class="input-group">
+                <label for="HUMIDITY">HUMIDITY:</label>
+                <input type="number" id="HUMIDITY" name="HUMIDITY" step="any" required>
+            </div>
+            <!-- Repeat the above input group for the other parameters (param2 to param12) -->
+            
+            <button type="submit">Predict Load</button>
+        </form>
+        
+        <div id="RESULT">
+<h2> PREDICTED LOAD </h2>
+            <p id="forecast-output">The forecasted load will be displayed here.</p>
+      
+        </div>
+    </main>
+</body>
+</html>
